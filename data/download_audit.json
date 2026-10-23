@@ -1,0 +1,30 @@
+{
+  "references": 11236,
+  "images_in_repository": 6000,
+  "not_included_scope_reduced": 5236,
+  "image_bytes": 3145721482,
+  "macros": {
+    "Alimentação e Delivery": 256,
+    "Autenticação e Onboarding": 311,
+    "CRM": 356,
+    "Componentes": 297,
+    "Dashboards e Analytics": 331,
+    "E-commerce": 279,
+    "Educação": 244,
+    "Fintech e Bancos": 275,
+    "IA e Chatbots": 69,
+    "Landing Pages e Sites": 286,
+    "Mapas e Mobilidade": 276,
+    "Mobile": 303,
+    "Mídia e Entretenimento": 294,
+    "Produtividade e Gestão": 256,
+    "Redes Sociais e Comunidades": 247,
+    "Saúde e Bem-estar": 251,
+    "Tipografia e Cores": 251,
+    "UI 3D": 246,
+    "UI e UX Geral": 918,
+    "Viagens e Reservas": 254
+  },
+  "all_included_files_exist": true,
+  "local_extras_preserved_outside_repo": 1000
+}

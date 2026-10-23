@@ -1,24 +1,40 @@
-# Referências de UI no Pinterest
+# Referências de UI
 
-Base privada com **11.236 imagens distintas**, organizadas em **20 macroáreas**, a partir de **793 páginas de origem**.
+**11,236 referências**, **6,000 imagens baixadas** e **20 macroáreas**. Repositório público.
+## Para análise de dados
 
-- [Base completa em JSON](data/references.json), com caminhos locais, URLs e estado do download.
-- [Exportação CSV](exports/referencias_ui.csv).
-- [Exportação JSON](exports/referencias_ui.json).
-- [Pacote exportável ZIP](exports/base_ui_exportavel.zip).
-- [Imagens por macroárea](images/).
-- [Planilha online](https://docs.google.com/spreadsheets/d/1ZWwUpsseGXfKOrHad4wzGtBz8UV0rlT6DKb1f8c8y-c/edit).
+- [CSV](data/references.csv)
+- [JSON](data/references.json)
+- [Imagens](images/)
+- [Excel](exports/Referencias_UI_Pinterest.xlsx)
+- [Auditoria de arquivos](data/download_audit.json)
+Cada registro tem ID, macroárea, subcategoria, origem, URL, caminho local, dimensões e SHA256 quando baixado. Use `included_in_repository=true` para selecionar os arquivos presentes.
+O escopo foi reduzido pelo usuário para concluir com o material existente. 5,236 referências mantêm apenas os links da fonte e não têm imagem incluída.
+## Pastas
 
-As imagens baixadas ficam em `images/<macroarea>/<id>.<extensão>`, preservando os arquivos disponíveis na fonte. O campo `local_path` permite relacionar cada arquivo aos metadados e à página de origem. O manifesto registra o resultado efetivo de cada download.
+| Macroárea | Imagens | Pasta |
+|---|---:|---|
+| Alimentação e Delivery | 256 | [Abrir](images/alimentacao-e-delivery/) |
+| Autenticação e Onboarding | 311 | [Abrir](images/autenticacao-e-onboarding/) |
+| CRM | 356 | [Abrir](images/crm/) |
+| Componentes | 297 | [Abrir](images/componentes/) |
+| Dashboards e Analytics | 331 | [Abrir](images/dashboards-e-analytics/) |
+| E-commerce | 279 | [Abrir](images/e-commerce/) |
+| Educação | 244 | [Abrir](images/educacao/) |
+| Fintech e Bancos | 275 | [Abrir](images/fintech-e-bancos/) |
+| IA e Chatbots | 69 | [Abrir](images/ia-e-chatbots/) |
+| Landing Pages e Sites | 286 | [Abrir](images/landing-pages-e-sites/) |
+| Mapas e Mobilidade | 276 | [Abrir](images/mapas-e-mobilidade/) |
+| Mobile | 303 | [Abrir](images/mobile/) |
+| Mídia e Entretenimento | 294 | [Abrir](images/midia-e-entretenimento/) |
+| Produtividade e Gestão | 256 | [Abrir](images/produtividade-e-gestao/) |
+| Redes Sociais e Comunidades | 247 | [Abrir](images/redes-sociais-e-comunidades/) |
+| Saúde e Bem-estar | 251 | [Abrir](images/saude-e-bem-estar/) |
+| Tipografia e Cores | 251 | [Abrir](images/tipografia-e-cores/) |
+| UI 3D | 246 | [Abrir](images/ui-3d/) |
+| UI e UX Geral | 918 | [Abrir](images/ui-e-ux-geral/) |
+| Viagens e Reservas | 254 | [Abrir](images/viagens-e-reservas/) |
 
-## Consulta e exportação
+Para exportar tudo, use **Code > Download ZIP** ou clone o repositório. Os formatos de imagem originais foram preservados, incluindo PNG e JPEG.
 
-Abra a pasta `images` no GitHub para visualizar os arquivos online. Clone o repositório ou use **Code > Download ZIP** para exportar a base e as imagens. CSV e JSON também podem ser baixados separadamente em `exports`.
-
-## Critérios e limites
-
-Uma referência corresponde a uma imagem distinta, deduplicada pela assinatura do arquivo. A classificação é automática pelo nome da coletânea, tópico ou consulta. Não houve revisão visual individual de todos os registros. Recortes ou arquivos diferentes de um mesmo projeto podem permanecer.
-
-O Pinterest não expõe o título nem o link individual de todos os pins em páginas públicas. As ausências foram preservadas; cada registro mantém o link da imagem e a página de origem. Os direitos das imagens permanecem com seus respectivos titulares; este repositório não concede licença sobre elas.
-
-Consulta realizada em 22/10/2026, America/Sao_Paulo. Carimbos individuais de coleta em UTC.
+A classificação é automática pelo contexto das coletâneas/tópicos. Não houve revisão visual de todos os registros nem garantia de projetos visualmente distintos. Títulos e links individuais ausentes foram preservados como indisponíveis. Direitos das imagens permanecem com seus titulares.
